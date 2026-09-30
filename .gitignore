@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated datasets / token binaries
+*.bin
+data_*/
+!data_prep/
+
+# Checkpoints and model weights
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+
+# Logs
+*.log
+train.csv
+eval.jsonl
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
