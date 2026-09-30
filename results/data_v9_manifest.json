@@ -1,0 +1,55 @@
+
+{
+  "seed": 26092026,
+  "policy": "Only official TRAIN splits are used for gradient training. Validation/test splits are excluded.",
+  "dynamic_option_shuffle": "Trainer reshuffles answer options every sample to prevent answer-letter memorization.",
+  "train_rows": 128816,
+  "holdout_rows": 6774,
+  "sources": {
+    "hellaswag": {
+      "train": 37910,
+      "holdout": 1995,
+      "total": 39905
+    },
+    "arc_easy": {
+      "train": 2139,
+      "holdout": 112,
+      "total": 2251
+    },
+    "piqa": {
+      "train": 15308,
+      "holdout": 805,
+      "total": 16113
+    },
+    "winogrande": {
+      "train": 38379,
+      "holdout": 2019,
+      "total": 40398
+    },
+    "arc_challenge": {
+      "train": 1064,
+      "holdout": 55,
+      "total": 1119
+    },
+    "openbookqa": {
+      "train": 4710,
+      "holdout": 247,
+      "total": 4957
+    },
+    "commonsenseqa": {
+      "train": 9254,
+      "holdout": 487,
+      "total": 9741
+    },
+    "sciq": {
+      "train": 11096,
+      "holdout": 583,
+      "total": 11679
+    },
+    "boolq": {
+      "train": 8956,
+      "holdout": 471,
+      "total": 9427
+    }
+  }
+}
