@@ -1,0 +1,45 @@
+
+{
+  "seed": 26092210,
+  "policy": "Only official TRAIN splits are used; benchmark validation/test splits are excluded from gradient training.",
+  "math_train_rows": 13318,
+  "math_holdout_rows": 735,
+  "sources": {
+    "gsm8k": {
+      "train": 7100,
+      "holdout": 373,
+      "total": 7473
+    },
+    "math_prealgebra": {
+      "train": 1145,
+      "holdout": 60,
+      "total": 1205
+    },
+    "math_algebra": {
+      "train": 1655,
+      "holdout": 87,
+      "total": 1742
+    },
+    "math_intermediate_algebra": {
+      "train": 1231,
+      "holdout": 64,
+      "total": 1295
+    },
+    "math_number_theory": {
+      "train": 824,
+      "holdout": 43,
+      "total": 867
+    },
+    "math_counting_and_probability": {
+      "train": 733,
+      "holdout": 38,
+      "total": 771
+    },
+    "svamp": {
+      "train": 630,
+      "holdout": 70,
+      "total": 700
+    }
+  },
+  "notes": "GSM8K and MATH retain human-written solutions; SVAMP uses provided equation and answer supervision."
+}
