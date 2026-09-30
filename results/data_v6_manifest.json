@@ -1,0 +1,35 @@
+
+{
+  "base_model": "v5_4h_balanced/final_hf",
+  "seed": 20260918,
+  "judge_train_rows": 95709,
+  "judge_holdout_rows": 2958,
+  "source_counts": {
+    "Rowan/hellaswag": {
+      "train": 38708,
+      "holdout": 1197
+    },
+    "allenai/ai2_arc": {
+      "train": 2184,
+      "holdout": 67
+    },
+    "lighteval/piqa": {
+      "train": 15630,
+      "holdout": 483
+    },
+    "allenai/winogrande": {
+      "train": 39187,
+      "holdout": 1211
+    }
+  },
+  "wikitext_train_tokens": 35000012,
+  "wikitext_local_holdout_tokens": 1000006,
+  "strict_split_policy": "Only official train splits are used. No benchmark validation/test examples enter training.",
+  "benchmarks_targeted": [
+    "HellaSwag",
+    "ARC-Easy",
+    "PIQA",
+    "WinoGrande",
+    "WikiText-103"
+  ]
+}
