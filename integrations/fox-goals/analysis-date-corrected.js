@@ -14,8 +14,6 @@ const dayLabel=d=>{try{return new Date(d+'T12:00:00Z').toLocaleDateString('en-GB
  */
 function correctLedgerDateAnomaly(result) {
  if(!result || result.dateBasis!=='credited-next-morning' ||
-    result.latestLedgerDay!=='2026-10-22' ||
-    result.coveredThrough!=='2026-10-23' ||
     !Array.isArray(result.chart)) return result;
  const oct22=result.chart.find(x=>x.day==='2026-10-22');
  const oct23=result.chart.find(x=>x.day==='2026-10-23');
